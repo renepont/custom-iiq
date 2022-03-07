@@ -1,0 +1,46 @@
+<Application
+	connector="sailpoint.connector.OpenConnectorAdapter"
+	featuresString="GROUP_PROVISIONING, PROVISIONING, SYNC_PROVISIONING, DISCOVER_SCHEMA"
+	name="Demo connector" type="DemoConnector">
+	<Attributes>
+		<Map>
+			<entry key="authSearchAttributes">
+				<value>
+					<List>
+						<String>name</String>
+					</List>
+				</value>
+			</entry>
+			<entry key="compositeDefinition" />
+			<entry key="connectorClass"
+				value="openconnector.DemoConnector" />
+			<entry key="formPath" value="Application.xhtml" />
+			<entry key="nativeChangeDetectionAttributeScope"
+				value="entitlements" />
+			<entry key="nativeChangeDetectionAttributes" />
+		</Map>
+	</Attributes>
+	<Schemas>
+		<Schema displayAttribute="name" groupAttribute="role"
+			identityAttribute="userName" instanceAttribute=""
+			nativeObjectType="account" objectType="account">
+			<AttributeDefinition name="userName"
+				remediationModificationType="None" type="string" />
+			<AttributeDefinition name="name"
+				remediationModificationType="None" type="string" />
+			<AttributeDefinition name="email"
+				remediationModificationType="None" type="string" />
+			<AttributeDefinition name="IIQDisabled"
+				remediationModificationType="None" type="string" />
+			<AttributeDefinition name="authType"
+				remediationModificationType="None" type="string" />
+			<AttributeDefinition name="extension"
+				remediationModificationType="None" type="string" />
+		</Schema>
+		<Schema displayAttribute="role" identityAttribute="role"
+			instanceAttribute="" nativeObjectType="group" objectType="group">
+			<AttributeDefinition name="role"
+				remediationModificationType="None" type="string" />
+		</Schema>
+	</Schemas>
+</Application>

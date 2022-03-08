@@ -1,12 +1,15 @@
 package pt.iiq.custom.util;
 
+import java.rmi.server.Operation;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 import openconnector.Item;
-import openconnector.Item.Operation;
 import pt.iiq.custom.entity.Role;
 import pt.iiq.custom.entity.User;
-
-import java.util.*;
-import java.util.stream.Collectors;
 
 public class SailpointAccountUtils {
 

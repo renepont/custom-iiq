@@ -16,12 +16,6 @@
 	<dependencies>
 
 		<dependency>
-			<groupId>sailpoint</groupId>
-			<artifactId>identityiq</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
@@ -66,6 +60,14 @@
 			<artifactId>commons-logging</artifactId>
 			<version>1.2</version>
 		</dependency>
+
+		<dependency>
+            <groupId>sailpoint</groupId>
+            <artifactId>identityiq</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/identityiq.jar</systemPath>
+        </dependency>
 
 	</dependencies>
 
